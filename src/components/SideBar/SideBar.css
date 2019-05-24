@@ -1,0 +1,17 @@
+.topnavcontainer {
+	margin-top: 0;
+	width: 12vw;
+	height: 94vh;
+	background-color: #121212;
+	border-right: 0.08px solid #585757;
+}
+.leftNav {
+	color: white;
+}
+.leftNavs:hover {
+	background-color: #1c1c1c;
+}
+
+.topsection {
+	border-bottom: 0.08px solid #585757;
+}
