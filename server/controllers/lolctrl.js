@@ -31,8 +31,19 @@ let getTeamsFromTournament = async (req, res) => {
 	}
 };
 
+let getChamps = async (req, res) => {
+	const results = await axios.get(
+		`https://api.pandascore.co//lol/champions?token=${API}`
+	);
+	const champs = results.data;
+	if (champs) {
+		res.status(200).json(champs);
+	}
+};
+
 module.exports = {
 	leagueMatchHistory,
 	getPlayersFromTournament,
-	getTeamsFromTournament
+	getTeamsFromTournament,
+	getChamps
 };
