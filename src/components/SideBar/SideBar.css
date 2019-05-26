@@ -15,3 +15,9 @@
 .topsection {
 	border-bottom: 0.08px solid #585757;
 }
+.innerwrapper {
+	display: flex;
+}
+.icon {
+	height: 50px;
+}

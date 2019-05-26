@@ -3,7 +3,7 @@ const { API } = process.env;
 
 let leagueMatchHistory = async (req, res) => {
   const results = await axios.get(
-    `https://api.pandascore.co//lol/matches/past?token=${API}`
+    `https://api.pandascore.co//lol/tournaments?token=${API}`
   );
   const info = results.data;
   if (info) {
@@ -43,6 +43,10 @@ let getChamps = async (req, res) => {
   }
 };
 
+
+
+
+// https://api.pandascore.co//lol/tournaments?token=X-448y4Klq1b-EyZFuI95wi13CX7kg6orOxj_Uz20jgCCMiByek
 module.exports = {
   leagueMatchHistory,
   getPlayersFromTournament,
